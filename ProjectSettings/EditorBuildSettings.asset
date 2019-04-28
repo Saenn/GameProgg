@@ -6,6 +6,36 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/Beginning.unity
-    guid: 2d8ada323c6d0fa498387d588721021f
+    path: Assets/Scenes/MenuScene.unity
+    guid: b877fc5a00f274600bef41036ccd4132
+  - enabled: 1
+    path: Assets/Scenes/HowTo.unity
+    guid: d85644e5eef494b93b8132124756e634
+  - enabled: 1
+    path: Assets/Scenes/Desert.unity
+    guid: 2df3847931293b64482d2543dc7e737e
+  - enabled: 1
+    path: Assets/Scenes/FirstScene.unity
+    guid: 5fb1c8bc3d734b4479a16748ebca8a62
+  - enabled: 1
+    path: Assets/Scenes/GiraffeLand.unity
+    guid: 32535a6dd266ecf4884d4319af7942e0
+  - enabled: 1
+    path: Assets/Scenes/GrassLand2.unity
+    guid: 67ec4da8c9986af4496aaf18bb50102b
+  - enabled: 1
+    path: Assets/Scenes/Grave.unity
+    guid: 763a74fda14ada949b2bd986004bcd7c
+  - enabled: 1
+    path: Assets/Scenes/Maze.unity
+    guid: d3bead4cb2f073b468c9ff3dc367518c
+  - enabled: 1
+    path: Assets/Scenes/Mountain.unity
+    guid: 0dcb39d369d57024a9b1695f95beb4f9
+  - enabled: 1
+    path: Assets/Scenes/Ocean.unity
+    guid: e0a83adfff0449246bb756e560d35470
+  - enabled: 1
+    path: Assets/Scenes/FiniteScene.unity
+    guid: 46d56e588887944cd824213d4c448109
   m_configObjects: {}
