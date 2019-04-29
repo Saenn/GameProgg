@@ -3,15 +3,21 @@ using System.Collections;
 using System.Collections.Generic;
  
  public class CubeMove : MonoBehaviour {
-     //Variables
-     public CharacterController playerControl;
-     public float speed = 12.0F;
-     public float runSpeed = 18.0F;
-     public float jumpSpeed = 20.0F; 
-     public float gravity = 30.0F;
-     public bool checkActions;
-     private float verticalVelocity = 0;
-     private Vector3 moveDirection, prevMoveDirection;
+
+    //Variables
+    public CharacterController playerControl;
+    public float speed = 12.0F;
+    public float runSpeed = 18.0F;
+    public float jumpSpeed = 20.0F; 
+    public float gravity = 30.0F;
+    public bool checkActions;
+
+    public bool isCollectDesertFlower = false;
+    public bool isCollectMountainFlower = false;
+
+    private float verticalVelocity = 0;
+    private Vector3 moveDirection, prevMoveDirection;
+    private float half = 0.5F;
      
      void Start () {
          checkActions = false;
@@ -86,5 +92,33 @@ using System.Collections.Generic;
          
      }
 
-     
- }
+    public void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("cactus")) {
+            speed = 6.0F;
+            runSpeed = 9.0F;
+            jumpSpeed = 10.0F;
+
+            Wait();
+
+            speed = 12.0F;
+            runSpeed = 18.0F;
+            jumpSpeed = 20.0F;
+        }
+        if(other.CompareTag("DesertFlower"))
+        {
+            isCollectDesertFlower = true;
+        }
+        if (other.CompareTag("MountainFlower"))
+        {
+            isCollectMountainFlower = true;
+        }
+    }
+    IEnumerator Wait()
+    {
+        yield return new WaitForSeconds(5);
+    }
+
+
+
+}
